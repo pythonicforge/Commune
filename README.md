@@ -1,6 +1,6 @@
 # _Commune_ 
 
-<img alt="banner" src="./assets/image.png"/>
+<img alt="banner" src="./assets/Banner.png"/>
 
 _Commune is an upcoming video conferencing web application designed to revolutionize the way people connect and collaborate online._
 
