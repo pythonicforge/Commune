@@ -17,9 +17,9 @@
                 <p>Login to your account</p>
             </div>
 
-            <form>
+            <form action="/submitNewUser" method="post">
                 <label for="email">Email</label>
-                <input type="email" name="name" id="email" placeholder="someone@example.com">
+                <input type="email" name="email" id="email" placeholder="someone@example.com">
 
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" placeholder="********">
@@ -29,7 +29,7 @@
                 </div>
 
 
-                <input class="button" type="button" value="Login">
+                <input class="button" type="submit" value="Login">
             </form>
 
         </div>
@@ -37,7 +37,6 @@
         <div class="right"></div>
 
     </div>
-    <script src="../static/js/signin.js"></script>
 </body>
 
 </html>

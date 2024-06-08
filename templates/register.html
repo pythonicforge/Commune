@@ -17,12 +17,12 @@
                 <p>Create a new account</p>
             </div>
 
-            <form>
+            <form action="/submitOldUser" method="post">
                 <label for="text">Username</label>
                 <input type="text" name="text" id="name" placeholder="Jane Doe">
 
                 <label for="email">Email</label>
-                <input type="email" name="name" id="email" placeholder="someone@example.com">
+                <input type="email" name="email" id="email" placeholder="someone@example.com">
 
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" placeholder="********">
@@ -32,7 +32,7 @@
                 </div>
 
 
-                <input class="button" type="button" value="Sign Up">
+                <input class="button" id="button" type="submit" value="Sign Up">
             </form>
 
         </div>
@@ -40,7 +40,6 @@
         <div class="right"></div>
 
     </div>
-    <script src="../static/js/signup.js"></script>
 </body>
 
 </html>
