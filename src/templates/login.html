@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../static/css/signin.css">
     <title>Commune</title>
 </head>
-
 <body>
     <div class="container">
         <div class="left">
@@ -27,15 +26,12 @@
                 <div class="login">
                     <label for="terms">Not registered yet? <a href="{{ url_for('auth.register') }}">Sign up here</a></label>
                 </div>
-
                 <input class="button" type="submit" value="Login">
             </form>
         </div>
 
         <div class="right"></div>
     </div>
-
-    <!-- Optional: Add some JavaScript for additional form validation -->
     <script>
         document.querySelector('form').addEventListener('submit', function(event) {
             const email = document.getElementById('email').value;
