@@ -5,5 +5,5 @@ main_bp = Blueprint('main', __name__)
 @main_bp.route('/')
 def main():
     if 'user' in session:
-        return redirect(url_for('auth.dashboard'))
+        return render_template("dashboard.html")
     return render_template('index.html')
