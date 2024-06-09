@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/x-icon">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="shortcut icon" href="../static/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/style.css">
     <title>Commune</title>
 </head>
 
 <body>
     <h1 class="text">Click on the image to get started ⬇️</h1>
     <div>
-        <a href="{{ url_for('auth.login') }}">
-            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Commune Logo">
+        <a href="/login">
+            <img src="../static/images/logo.png" alt="Commune Logo">
         </a>
     </div>
 </body>

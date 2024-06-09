@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/x-icon">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+    <link rel="shortcut icon" href="../static/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/signup.css">
     <title>Commune</title>
 </head>
 
@@ -13,11 +13,11 @@
     <div class="container">
         <div class="left">
             <div class="heading">
-                <img src="{{ url_for('static', filename='images/favicon.png') }}" alt="Commune" class="logo">
+                <img src="../static/images/favicon.png"" alt="Commune" class="logo">
                 <p>Create a new account</p>
             </div>
 
-            <form action="{{ url_for('auth.register') }}" method="post">
+            <form action="/register" method="post">
                 <label for="username">Username</label>
                 <input type="text" name="username" id="username" placeholder="Jane Doe" required>
 
@@ -28,7 +28,7 @@
                 <input type="password" name="password" id="password" placeholder="********" required>
 
                 <div class="login">
-                    <label for="terms">Already have an account? <a href="{{ url_for('auth.login') }}">Login here</a></label>
+                    <label for="terms">Already have an account? <a href="/login">Login here</a></label>
                 </div>
 
                 <input class="button" id="button" type="submit" value="Sign Up">
