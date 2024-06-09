@@ -11,7 +11,7 @@ def register():
         try:
             auth.create_user_with_email_and_password(email, password)
             session['user'] = email
-            return redirect(url_for('auth.dashboard'))
+            return render_template("dashboard.html")
         except Exception as e:
             print(e)
     return render_template('register.html')
@@ -24,7 +24,7 @@ def login():
         try:
             auth.sign_in_with_email_and_password(email, password)
             session['user'] = email
-            return redirect(url_for('auth.dashboard'))
+            return render_template("dashboard.html")
         except Exception as e:
             print(e)
     return render_template('login.html')
