@@ -18,8 +18,8 @@ _Commune is an upcoming video conferencing web application designed to revolutio
 - _**Backend**: Python, Flask_
 - _**Frontend**: HTML, CSS, JavaScript_
 - _**Real-time Communication**: Flask-SocketIO for WebSockets, WebRTC for video/audio streaming_
-- _**Database**: SQLite (for development), PostgreSQL (for production)_
-- _**Deployment**: Heroku (or your preferred cloud platform)_
+- _**Database**: Firebase_
+- _**Deployment**: Vercel_
 
 ### _Installation_
 
