@@ -1,4 +1,4 @@
-div{
+div {
     display: flex;
     height: 85vh;
     overflow: hidden;
@@ -6,11 +6,11 @@ div{
     align-items: center;
 }
 
-body img{
+body img {
     width: 480px;
 }
 
-.text{
+.text {
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }

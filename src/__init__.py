@@ -18,15 +18,29 @@ firebase = pyrebase.initialize_app(firebaseConfig)
 auth = firebase.auth()
 
 def create_app():
+    """
+    This function creates and configures a Flask application instance.
+
+    Returns:
+    app: Flask application instance
+    """
+
+    # Initialize Flask application with the name of the current module (__name__)
+    # and specify the location of static files
     app = Flask(__name__, static_folder='static')
+
+    # Load configuration settings from the Config object
     app.config.from_object(Config)
 
+    # Initialize Flask-Session extension to support session management
     Session(app)
 
-    from .auth import auth_bp
-    from .routes import main_bp
+    # Import and register blueprints for authentication and main routes
+    from.auth import auth_bp
+    from.routes import main_bp
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(main_bp)
 
+    # Return the configured Flask application instance
     return app

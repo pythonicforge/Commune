@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../static/css/signin.css">
     <title>Commune</title>
 </head>
+
 <body>
     <div class="container">
         <div class="left">
@@ -24,7 +25,8 @@
                 <input type="password" name="password" id="password" placeholder="********" required>
 
                 <div class="login">
-                    <label for="terms">Not registered yet? <a href="{{ url_for('auth.register') }}">Sign up here</a></label>
+                    <label for="terms">Not registered yet? <a href="{{ url_for('auth.register') }}">Sign up
+                            here</a></label>
                 </div>
                 <input class="button" type="submit" value="Login">
             </form>
@@ -33,7 +35,7 @@
         <div class="right"></div>
     </div>
     <script>
-        document.querySelector('form').addEventListener('submit', function(event) {
+        document.querySelector('form').addEventListener('submit', function (event) {
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
 

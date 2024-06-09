@@ -25,7 +25,8 @@ body {
   position: relative;
 }
 
-.left, .right {
+.left,
+.right {
   width: 400px;
 }
 
@@ -50,19 +51,19 @@ form {
   margin-right: 10px;
 }
 
-.left .heading{
-    display: flex;
-    align-items: center;
+.left .heading {
+  display: flex;
+  align-items: center;
 }
 
-.left .heading p{
-    font-size: 18px;
+.left .heading p {
+  font-size: 18px;
 }
 
 .left .heading .logo {
   margin: 0 15px 10px 0;
   width: 60px;
-   height: auto;
+  height: auto;
 }
 
 label {
@@ -89,7 +90,7 @@ input {
   background-color: #6ef861;
   color: black;
   font-weight: bold;
-  font-size:1rem;
+  font-size: 1rem;
   margin-top: 30px;
   border: 1px solid black;
   outline: none;
@@ -107,10 +108,12 @@ div .right {
   .container {
     width: 350px;
   }
+
   .left {
     height: 100%;
     width: 100%;
   }
+
   .right {
     display: none;
   }
