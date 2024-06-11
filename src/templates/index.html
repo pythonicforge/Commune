@@ -10,11 +10,16 @@
 </head>
 
 <body>
-    <h1 class="text">Click on the image to get started ⬇️</h1>
-    <div>
-        <a href="{{ url_for('auth.login') }}">
-            <img src="../static/images/logo.png" alt="Commune Logo">
-        </a>
+    <div class="container">
+        <div class="left">
+            <img src="../static/images/logo-web.png" alt="Logo" class="logo">
+            <h3 class="heading">Video calls with anyone, anywhere</h3>
+            <p class="subheading">Stay connected and collaborate with friends, family, and colleagues no matter where you are.</p>
+            <a href="{{ url_for('auth.login') }}" class="btn-primary">Sign in</a>
+        </div>
+        <div class="right">
+            <img src="../static/images/landing-vector.png" alt="" class="vector">
+        </div>
     </div>
 </body>
 
