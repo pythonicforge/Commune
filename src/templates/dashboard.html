@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../static/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../static/css/dashboard.css">
     <title>Commune - Dashboard</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/check_session')
+                .then(response => response.json())
+                .then(data => {
+                    if (!data.logged_in) {
+                        window.location.href = '/login';
+                    }
+                });
+        });
+    </script>
 </head>
-
 <body>
     <div class="navbar">
         <img src="../static/images/logo-web.png" alt="Logo">
-        <a href="/" class="btn">Logout</a>
+        <a href="/logout" class="btn">Logout</a>
     </div>
     <div class="container">
         <h3>Welcome to dashboard</h3>
     </div>
 </body>
-
 </html>

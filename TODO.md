@@ -6,6 +6,6 @@ _Commune is an upcoming video conferencing web application designed to revolutio
 
 ### _TODOS_
 - [x] _Write a proper frontend for the landing page_
-- [ ] _Write code for dashboard_
+- [x] _Write code for dashboard_
 - [ ] _Fix authentication bugs and create sessions, preventing browser defaults_
 - [x] _Fix `favicon.jpg` not showing in production deployment_

@@ -32,11 +32,21 @@
         <div class="right"></div>
     </div>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var messages = {{ get_flashed_messages() | tojson | safe }};
+            if (messages.length > 0) {
+                messages.forEach(function(message) {
+                    alert(message);
+                    console.log(message);
+                });
+            }
+        });
+    
         document.querySelector('form').addEventListener('submit', function (event) {
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
-
-            if (!email || !password) {
+    
+            if (!email ||!password) {
                 event.preventDefault();
                 alert('Please fill out both fields.');
             }
